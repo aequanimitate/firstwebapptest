@@ -1,6 +1,6 @@
 body{
 	background: lightgrey;
-	color: #2F2F2F/* darkgrey; */
+	color: #2F2F2F; /* darkgrey; */
 	margin: 0px;
 	padding: 0px;
 }
@@ -13,31 +13,31 @@ h2 {
 #encabezado {
 	padding: 0px 20px;
 }
-#navegacion {
-	margin: 0px -8px;
+nav {
+	margin: 0px 0px;
 	padding: 10px 20px;
 	background: #8F8F8F;
 	border: 2px solid #6F6F6F;
 }
-#navegacion li {
+nav li {
 	list-style-type: none;
 }
-#navegacion li a {
+nav li a {
 	text-decoration: none;
 	color: white;
 }
-#navegacion li a:hover {
+nav li a:hover {
 	font-weight: bold;
 }
-#navegacion li a.actual {
+nav li a.actual {
 	font-style: italic;
 }
 #contenido_principal {
 	padding: 20px;
 	margin: 20px 50px 20px 50px;
-	color: #3F3F3F/* darkgrey; */
-	background:#FBF0D9;
-	/*color:#5F4B32;*/
+	color: #3F3F3F; /* darkgrey; */
+	/*background:#FBF0D9;
+	color:#5F4B32;*/
 }
 #contenido_principal h3 {
 	border-bottom: 3px solid #dd0000;
