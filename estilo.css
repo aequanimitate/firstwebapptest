@@ -1,8 +1,18 @@
 body{
 	background: lightgrey;
+	background-color: lightgrey;
+	background-image: url("mi_imagen.jpg"); /*en modo rgb jpg git y png*/
+	background-repeat: no-repeat;
+	background-repeat: repeat-x; /*repite en horizontal*/
+	background-position: top left; /*top bottom left right center*/
+	/*background-position: 20px 10px; x,y*/
+	background-attachment: scroll; /* por defecto */
+	/*background-attachment: fixed; /* no va a seguir al scroll */
+	background-repeat: repeat-y; /*repite en vertical*/
 	color: #2F2F2F; /* darkgrey; */
 	margin: 0px;
 	padding: 0px;
+	font-size: 12px;
 }
 h1 {
 	color: black;
@@ -19,8 +29,13 @@ nav {
 	background: #8F8F8F;
 	border: 2px solid #6F6F6F;
 }
+nav ul {
+	overflow: auto;
+}
 nav li {
 	list-style-type: none;
+	float:left;
+	width:25%;
 }
 nav li a {
 	text-decoration: none;
@@ -34,14 +49,42 @@ nav li a.actual {
 }
 #contenido_principal {
 	padding: 20px;
-	margin: 20px 50px 20px 50px;
+	/*margin: 20px 50px 20px 50px;*/
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	color: #3F3F3F; /* darkgrey; */
+	max-width: 50%;
+	min-width: 100px;
+	max-height: 500px;
+	min-height: 100px;
 	/*background:#FBF0D9;
 	color:#5F4B32;*/
 }
 #contenido_principal h3 {
 	border-bottom: 3px solid #dd0000;
 }
+
+/*
+div {
+	display:inline; como caja
+	o
+	disblay:block; in line con el texto
+	disblay:inline-block; se apilan una al lado de la otra
+	display: none; (no aparece ni ocupa lugar)
+}
+
+*/
+
+/*
+* {
+  box-sizing: content-box; normal de un navegador
+}
+o
+* {
+  box-sizing: border-box;
+}
+*/
 
 /*
 lightgray / lightgrey	#D3D3D3	rgb(211,211,211)
@@ -53,5 +96,52 @@ It uses #f1e7d0 under the text, and 5f5f54 in the margins/background.
 In my calibre's css, I use a shade darker - EBDDB - and just brown for text.
 
 Maybe you would like Cornsilk #FFF8DC or AliceBlue #F0F8FF.
+
+*/
+
+/*
+
+absoluta pixel
+%
+EM => depende del cuerpo tipográfico: 2em relativiza todo al tamaño de letra que HUBIESE heredado.
+REM => root em depende de la etiqueta raíz (del html)
+
+html {
+  font-size: 20px;
+}
+p {
+  font-size: 1.2rem;
+}
+
+selector 1, selector 2, selector 3 {
+	estilo
+}
+
+selector hijo
+ul>li { child!
+	
+}
+
+selector adyacente + 
+
+first-child es una pseudo clase (va con :)
+#menu .plato .comida {
+}
+#menu .plato .comida:first-child {
+}
+#menu .plato .comida:last-child {
+}
+
+p:lang(es) {
+	
+}
+
+input:focus { -- cuando este input está en foco del usuario
+	
+}
+
+input:enabled { -- o disabled; cuando este input está disponible para el usuario
+	
+}
 
 */
