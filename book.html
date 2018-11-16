@@ -6,40 +6,53 @@
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
-	<div id="encabezado">
+	<header id="project_header">
 		<h1>Awakening from the Paradox</h1>
 		<h2>Welcome to a hyper book</h2>
-	</div>
-	<nav>
+	</header>
+	<nav id="main_navigation">
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="book.html" class="actual">Book</a></li>
 			<li><a href="survey.html">Survey</a></li>
 		</ul>
 	</nav>
-	<section> <!--Ahora puedo tener jerarquía desde h1 en esta section.-->
-		<div id="contenido_principal">
-			<p>Libro aquí.</p>
-		</div>
-	</section>
-	<canvas id="mi_canvas" width="200" height="200"></canvas>
-	<aside>
-		<h1>Comentarios</h1>
-		<p>Comentarios irán aquí</p>
-	</aside>
-	<article>
-		<header>
+	<section id="left_panel">
+		<article>
+			<h1>Comentarios</h1>
+			<p>Los comentarios del texto irán aquí</p>
+		</article>
+		<article>
 			<h1>Tech Watchlist</h1>
+			<p>Contenido opcional si hay una tecnología que pueda linkearse al Book of technology.</p>
+			<footer>
+			  <p>Tema: Tecnología x.</p>
+			</footer>
+		</article>
+	</section>
+	<section id="main_content"> <!--Ahora puedo tener jerarquía desde h1 en esta section.-->
+		<header id="book_header">
+			<h1>Book</h1>
+			<h2>Chapter</h2>
+	  		<p>Progress: <progress value="70" max="100">70%</progress>.</p>
+  			<p><time datetime="2018-11-09">09 de Noviembre</time>.</p>
 		</header>
-		<p>Contenido opcional si hay una tecnología que pueda linkearse al Book of technology.</p>
-		<footer>
-		  <p>Tema: Tecnología x.</p>
-		</footer>
-	</article>
-	<footer>
-  		<p>Legal crap.</p>
-  		<p>Progreso del proyecto: <progress value="70" max="100">1%</progress>.</p>
-  		<time datetime="2018-11-09">09 de Noviembre</time>.
+		<p>Lorem ipsum dolor sit amet, maecenas laoreet sit accumsan quis. Vitae praesent sed posuere dolor malesuada sagittis, odio nam velit pellentesque. Amet sed non morbi gravida ullamcorper feugiat, ad quam hendrerit lacus aliquam eu, curabitur vestibulum mi nulla in. Euismod sit sodales, elit eu. Pellentesque integer integer congue, nec urna sapien consectetur diam. Nunc in ut nullam duis tempus etiam, dui metus metus parturient libero fermentum.</p>
+		<p>Nulla blandit a felis quis, pede quisque semper aliquet nec pariatur vitae. Posuere pede leo risus laoreet iaculis justo, vel nulla nullam rutrum leo rutrum viverra, proin at luctus magna, eleifend auctor felis magna mi elementum in. Nunc viverra, sit dictumst cursus. Scelerisque pellentesque libero, purus phasellus sem eget. Imperdiet turpis mauris, egestas venenatis ornare felis ridiculus, posuere ut nunc nisl. Orci et, vestibulum ipsum ante nibh nec leo, sollicitudin at rutrum donec at sed platea, a dui maecenas curabitur lectus ad, et sem interdum. Wisi etiam ea quis, sapien amet nulla eget, mollis sed, nulla enim aliquam amet accumsan tempus nonummy, venenatis aut elit turpis leo. Donec quam bibendum ac wisi torquent. In quisque, vel integer wisi vitae, fusce placerat id id lorem nulla amet. Faucibus nullam quis ante neque.</p>
+		<p>Qui metus ornare et pede mi donec. Hac duis enim integer mauris quos. Pede ac orci mauris sem gravida, elit blandit netus volutpat tellus, sollicitudin adipiscing et pulvinar semper, turpis aenean, auctor pede velit. Luctus in ligula phasellus, lacus elit, ante ultrices adipiscing id. At enim ullamcorper mauris at velit blandit, qui integer aliquet ligula, nulla tempus erat maecenas tellus nec, nec sollicitudin ut sed tristique ultrices, sodales diam venenatis hymenaeos.</p>
+		<p>In placerat, ac vel facilisis massa rutrum scelerisque. Luctus nascetur aliquam sed, pharetra dictum mi vivamus nisl tempus. At distinctio arcu donec etiam metus, sed nonummy posuere massa, tincidunt amet imperdiet, accumsan et consectetuer laoreet eget, vel pellentesque erat non. Eros libero, venenatis nec a mauris, orci tellus pede tortor duis pede elit, massa felis sit risus vestibulum at, fusce luctus dolor magna sem molestie incidunt. Curabitur suspendisse arcu urna wisi vel tellus, vehicula dolor at est consectetuer nunc, ut morbi, pellentesque neque sagittis nam fermentum arcu. A magna dolor, luctus sodales turpis lacus ante montes, at diam proin, vitae tristique neque non amet nibh, in in curabitur magna. Pharetra nullam vitae nunc commodo pellentesque vel, urna libero magna. Parturient nulla sed nulla lobortis dictum volutpat, odio dapibus vivamus, etiam nec, erat convallis mauris. Quam eget lacinia fermentum per donec, feugiat magna nascetur ut, nesciunt lectus et. Vestibulum facilisis senectus curabitur purus, lorem amet porta aliquam elementum sit nullam, nunc et bibendum quam lectus curabitur, amet pellentesque et aenean.</p>
+	</section>
+	<section id="right_panel">
+		<!-- <canvas id="mi_canvas" width="200" height="200"></canvas> -->
+		<p>Navigation right canvas goes here.</p>
+		<p>Navigation right canvas goes here.</p>
+	</section>
+	<footer id="book_controls">
+  		<p>Controls for the book:</p>
+  		<ul>
+  			<li>Zoom</li>
+  			<li>Perspective</li>
+  		</ul>
 	</footer>
 </body>
 </html>

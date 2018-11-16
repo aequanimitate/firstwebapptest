@@ -1,26 +1,49 @@
-body{
-	background: lightgrey;
-	color: #2F2F2F; /* darkgrey; */
-	margin: 0px;
-	padding: 0px;
+html {
+	font-size:12px;
 }
-h1 {
-	color: black;
+body {
+	overflow: auto;
+	background-color: #f3f3f3;
+	background-image: url("images/45-degree-fabric-dark.png");
+	/*background-image: url("images/page_background_full.jpg");
+	background-image: url("images/page_background_minimum.jpg");
+	TO-DO check background-repeat: repeat-x; this didn't worked*/
+	background-position: top left; /* options: top bottom left right center */
+	background-attachment: fixed;
+	color: #2F2F2F; /* font dark grey */
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
-h2 {
-	color: black;
+#project_header {
+	background-color: #8F8F8F;
+	border: 1px solid #8F8F8F;
+	margin: 0px 0px 0px 0px;
+	padding: 10px;
 }
-#encabezado {
-	padding: 0px 20px;
+#project_header h1 {
+	color: #000000;
+	font-size: 3rem;
+}
+#project_header h2 {
+	color: #000000;
+	font-size: 2rem;
 }
 nav {
-	margin: 0px 0px;
-	padding: 10px 20px;
+	
+	font-size: 2rem;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 	background: #8F8F8F;
-	border: 2px solid #6F6F6F;
+	border-bottom: 2px solid #6F6F6F;
+}
+nav ul {
+	overflow: auto;
 }
 nav li {
 	list-style-type: none;
+	float:left;
+	width:33.33%;
+	text-align: center;
 }
 nav li a {
 	text-decoration: none;
@@ -32,16 +55,62 @@ nav li a:hover {
 nav li a.actual {
 	font-style: italic;
 }
-#contenido_principal {
-	padding: 20px;
-	margin: 20px 50px 20px 50px;
-	color: #3F3F3F; /* darkgrey; */
-	/*background:#FBF0D9;
-	color:#5F4B32;*/
+section {
+	float: left;
+	width: 25%;
 }
-#contenido_principal h3 {
-	border-bottom: 3px solid #dd0000;
+#main_content {
+	font-size: 2rem;
+	width: 50%;
+	min-width: 80px;
+	color:#5F4B32;
 }
+#main_content header {
+	/*overflow: auto;*/
+	line-height: : 2rem;
+	display: inline;
+	vertical-align: bottom;
+}
+#main_content header h1 {
+	/*float: left;*/
+	line-height: : 2rem;
+	margin-right: 10px;
+	display: inline;
+	vertical-align: bottom;
+}
+#main_content header h2 {
+	/*float: left;*/
+	line-height: : 2rem;
+	font-size: 1.8rem;
+	margin-right: 10px;
+	display: inline;
+	vertical-align: bottom;
+}
+#main_content header p {
+	/*float: left;*/
+	line-height: : 2rem;
+	font-size: 1rem;
+	margin-right: 10px;
+	display: inline;
+	vertical-align: bottom;
+}
+#main_content p:hover{
+	border-bottom: 1px solid #c0c0c0;
+	border-top: 1px solid #c0c0c0;
+}
+body>footer {
+	clear: both;
+}
+
+/*
+* {
+  box-sizing: content-box; normal de un navegador
+}
+o
+* {
+  box-sizing: border-box;
+}
+*/
 
 /*
 lightgray / lightgrey	#D3D3D3	rgb(211,211,211)
@@ -53,5 +122,52 @@ It uses #f1e7d0 under the text, and 5f5f54 in the margins/background.
 In my calibre's css, I use a shade darker - EBDDB - and just brown for text.
 
 Maybe you would like Cornsilk #FFF8DC or AliceBlue #F0F8FF.
+
+*/
+
+/*
+
+absoluta pixel
+%
+EM => depende del cuerpo tipográfico: 2em relativiza todo al tamaño de letra que HUBIESE heredado.
+REM => root em depende de la etiqueta raíz (del html)
+
+html {
+  font-size: 20px;
+}
+p {
+  font-size: 1.2rem;
+}
+
+selector 1, selector 2, selector 3 {
+	estilo
+}
+
+selector hijo
+ul>li { child!
+	
+}
+
+selector adyacente + 
+
+first-child es una pseudo clase (va con :)
+#menu .plato .comida {
+}
+#menu .plato .comida:first-child {
+}
+#menu .plato .comida:last-child {
+}
+
+p:lang(es) {
+	
+}
+
+input:focus { -- cuando este input está en foco del usuario
+	
+}
+
+input:enabled { -- o disabled; cuando este input está disponible para el usuario
+	
+}
 
 */
